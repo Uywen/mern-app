@@ -9,7 +9,7 @@ app.use(express.json());
 app.use("/api/user", router);
 app.use("/api/blog", blogRouter);
 mongoose
-  .connect(`mongodb+srv://UANT:ANTU@cluster1.je9ou1z.mongodb.net/?retryWrites=true&w=majority`
+  .connect(`Your URI`
   )
   .then(() => app.listen(5000))
   .then(() =>
